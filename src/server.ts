@@ -24,7 +24,7 @@ server.use(mainRoutes);
 
 //Criando a página de NÃO ENCONTRADO 
 server.use((req, res) => {
-    res.send("Página não encontrada!");
+    res.render('pages/404');
 });
 
 //Inicia o servidor na porta da variável de ambiente
